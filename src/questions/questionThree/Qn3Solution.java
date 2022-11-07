@@ -40,18 +40,18 @@ at least one solution exists for the given A and B.
         {
             output.append(acharacters);
             As--;
-            if (As > 0)
+            if (As > 0 && As <= 100)
             {
                 output.append(acharacters);
                 As--;
             }
-            if (Bs > 0)
+            if (Bs > 0 && Bs <= 100)
             {
                 output.append(bcharacters);
                 Bs--;
             }
         }
-        while (As > 0)
+        while (As > 0 && As <= 100)
         {
             output.append(acharacters).append(bcharacters);
             As--;
@@ -60,7 +60,7 @@ at least one solution exists for the given A and B.
     }
 
     public static void main(String[] args) {
-        String letters = printLetters(5, 3);
+        String letters = printLetters(1, 4);
         System.out.println(letters);
     }
 }
