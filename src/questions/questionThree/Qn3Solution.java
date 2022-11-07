@@ -21,6 +21,11 @@ at least one solution exists for the given A and B.
      */
 
     static String printLetters(int aletters, int bletters) {
+        /*
+        BIG - O Notation
+        Time Complexity: - 0(n)
+        Space Complexity: - 0(1)
+         */
         return printLetters(aletters, bletters, 'a', 'b');
     }
 

@@ -12,6 +12,26 @@ it; if it is open, close it). The second time, only visit every 2nd door (i.e., 
 and toggle it. The third time, visit every 3rd door (i.e., door #3, #6, #9, ...), etc., until you
 only visit the 100th door.
      */
+
+    public static void main(String[] args) {
+
+        /*
+        All doors are closed initially,so lets close them
+         */
+        //traverseDoors();
+        /*
+        Traverse all second doors #2 #4 #6
+         */
+        Door door = new Door();
+        // traverseEachSecondDoor(door);
+
+        /*
+        Traverse every third doors i.e #3 #6 #9
+         */
+        // traverseEachSecondDoor(door);
+
+    }
+
     static void traverseDoors() {
         //Doors closed initially
         List<String> doors = new ArrayList<>();
@@ -22,6 +42,11 @@ only visit the 100th door.
         }
 
         System.out.print(doors);
+        /*
+        BIG - O Notation
+        Time Complexity: - 0(n)
+        Space Complexity: - 0(1)
+         */
     }
 
     static void toggleDoors(Door door) {
@@ -34,38 +59,32 @@ only visit the 100th door.
     }
 
     static void traverseEachSecondDoor(Door door) {
-        for (int i = 0; i <= 100; i +=2) {
-            if (i != 0){
+        for (int i = 0; i <= 100; i += 2) {
+            if (i != 0) {
                 toggleDoors(door);
                 System.out.println(i);
             }
         }
+        /*
+        BIG - O Notation
+        Time Complexity: - 0(n)
+        Space Complexity: - 0(1)
+         */
     }
 
     static void traverseEachThirdDoor(Door door) {
-        for (int i = 0; i <= 100; i +=3) {
-            if (i != 0){
+        for (int i = 0; i <= 100; i += 3) {
+            if (i != 0) {
                 toggleDoors(door);
                 System.out.println(i);
             }
         }
+        /*
+        BIG - O Notation
+        Time Complexity: - 0(n)
+        Space Complexity: - 0(1)
+         */
     }
 
-    public static void main(String[] args) {
-        /*
-        All doors are closed initially,so lets close them
-         */
-        //traverseDoors();
-        /*
-        Traverse all second doors #2 #4 #6
-         */
-        Door door = new Door();
-       // traverseEachSecondDoor(door);
 
-        /*
-        Traverse every third doors i.e #3 #6 #9
-         */
-       // traverseEachSecondDoor(door);
-
-    }
 }

@@ -17,7 +17,13 @@ array spiraling inwards. For example, given 5, produce this array:
 
     public static void main(String[] args) {
         // System.out.println("Hello world!");
+        /*
+        BIG - O Notation
+        Time Complexity: - 0(n)
+        Space Complexity: - 0(n)
+         */
         printSpiral();
+
     }
 
     static void printSpiral(){
